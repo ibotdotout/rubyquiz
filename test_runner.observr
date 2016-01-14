@@ -1,0 +1,28 @@
+# Install with
+#   https://github.com/kevinburke/observr
+# Run me with:
+#   $ observr specs.observr
+
+# --------------------------------------------------
+# Rules
+# --------------------------------------------------
+watch('^(.*)\.rb')  { |m| ruby m[1] }
+
+# --------------------------------------------------
+# Signal Handling
+# --------------------------------------------------
+Signal.trap('QUIT') { build }       # Ctrl-\
+Signal.trap('INT' ) { abort("\n") } # Ctrl-C
+
+# --------------------------------------------------
+# Helpers
+# --------------------------------------------------
+def ruby(path)
+  path = "tests/#{path}_test" unless path.start_with?("test")
+  run "ruby #{path}.rb"
+end
+
+def run( cmd )
+  puts cmd
+  system cmd
+end
