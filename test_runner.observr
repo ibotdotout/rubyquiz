@@ -1,7 +1,7 @@
 # Install with
 #   https://github.com/kevinburke/observr
 # Run me with:
-#   $ observr specs.observr
+#   $ observr test_runner.observr
 
 # --------------------------------------------------
 # Rules
