@@ -1,7 +1,6 @@
 # https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing
 
 require "test/unit"
-require_relative "test_helper"
 require_relative "../solitaire_cipher"
 
 class SolitaireCipherTest < Test::Unit::TestCase
