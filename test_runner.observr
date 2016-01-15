@@ -6,7 +6,8 @@
 # --------------------------------------------------
 # Rules
 # --------------------------------------------------
-watch('^(.*)\.rb')  { |m| ruby m[1] }
+watch('^quiz/(.*)\.rb')  { |m| ruby m[1] }
+watch('^test/(.*)\.rb')  { |m| ruby m[0] }
 
 # --------------------------------------------------
 # Signal Handling
@@ -18,8 +19,8 @@ Signal.trap('INT' ) { abort("\n") } # Ctrl-C
 # Helpers
 # --------------------------------------------------
 def ruby(path)
-  path = "test/#{path}_test" unless path.start_with?("test")
-  run "ruby #{path}.rb"
+  path = "test/#{path}_test.rb" unless path.start_with?("test")
+  run "ruby #{path}"
 end
 
 def run( cmd )

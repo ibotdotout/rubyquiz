@@ -1,7 +1,7 @@
 # https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing
 
 require_relative "test_helper"
-require_relative "../solitaire_cipher"
+require_relative "../quiz/solitaire_cipher"
 require "minitest/autorun"
 
 class SolitaireCipherTest < Minitest::Test
