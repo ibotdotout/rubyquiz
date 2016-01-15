@@ -2,10 +2,8 @@ sudo: false
 language: ruby
 rvm:
 - 2.2
-before_script:
-- export PULLREVIEW_REPO_TOKEN=${PULLREVIEW_REPO_TOKEN}
 script:
 - rake test
-env:
-  global:
-  - secure: wJjgcsiEXqbUCPujzoHgBaNqFbnjfcPB6jscXzmLUUVwDkxtm7KlU/aTX7KYx4oSIUsbb0lxEmpWvujMu5Bz4zS6DhQ0l3KVdoj4uB2Y5bN++DiF0y537vNmvch8h8BdcdI55ZM/gv1ynbr8qRMg41mBoUU1ixzgC6/KL411QnJ3RwrHZ1fLUSCuRTQsD/6VBtg5REoKQOoPZtdNlUq0fGWYeZ5R8tZqcPfM5PRbDI6m09RNP+Y3cYz5Lz0/WQkpEqoAXME+P+3jbgf10pHrF0KjYEnJXD6Q7X5doH9OPX5l483Fmw4ytNeMK0R3wjqkxupg9Ji9g/cv7y69PsjWax7aMimHTnRUCLS4Yt6WrFLST1SR97jQZAFsCpX/8P85to+rGJjtumeewBkuVxwUoj/ws3bz2hs9WpfGs1glqzU4EI9VSoXm1mQQPL/w4Kg81L54SZMLcYUA6Yfsijc+0iweqbPmwfh22rQJ+sthuDa8whdeljMusoTRyoKLP5UDfwYPZOj27b9cvYOZ3KOKzfgcffXAUmuwQg9mzoLifHhoA9lqEbDljsndXF8b/FsiGOJV5oDWH4+bwjNghitMv2jfEeWIeofk6FVIYB4zD+Q3imWvQZcECsA872EKYBl2rG1a8KYcMgU4sYFhs5lvw+F5OO5n8NihATqcGdxG5Hg=
+addons:
+  code_climate:
+    repo_token: 704d9978ae6e958eaf4139b042eb08e7899c2fbd70444c4ca58a02da25918e99

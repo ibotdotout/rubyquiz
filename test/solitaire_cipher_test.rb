@@ -1,10 +1,9 @@
 # https://en.wikibooks.org/wiki/Ruby_Programming/Unit_testing
 
-require "minitest/autorun"
-require_relative "test_helper"
+require "test/unit"
 require_relative "../solitaire_cipher"
 
-class SolitaireCipherTest < Minitest::Test
+class SolitaireCipherTest < Test::Unit::TestCase
   def setup
     text = "Code in Ruby, live longer!"
     @cipher = SolitaireCipher.new(text)
