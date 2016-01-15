@@ -18,7 +18,7 @@ Signal.trap('INT' ) { abort("\n") } # Ctrl-C
 # Helpers
 # --------------------------------------------------
 def ruby(path)
-  path = "tests/#{path}_test" unless path.start_with?("test")
+  path = "test/#{path}_test" unless path.start_with?("test")
   run "ruby #{path}.rb"
 end
 
