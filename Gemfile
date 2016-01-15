@@ -1,1 +1,2 @@
-gem 'codacy-coverage', :require => false
+source 'https://rubygems.org'
+gem 'codacy-coverage'
