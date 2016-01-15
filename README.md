@@ -8,7 +8,6 @@ Coverage](https://codeclimate.com/github/ibotdotout/rubyquiz/badges/coverage.svg
 [![Issue
 Count](https://codeclimate.com/github/ibotdotout/rubyquiz/badges/issue_count.svg)](https://codeclimate.com/github/ibotdotout/rubyquiz)
 
-
 ### Run All Test with [Rake](http://stackoverflow.com/a/4966676)
 
 ```sh
@@ -20,3 +19,8 @@ $ rake test
 ```sh
 $ observr test_runner.observr
 ```
+
+#### References:
+* [minitest/{unit,spec,mock,benchmark}](https://github.com/seattlerb/minitest)
+* [Dress Up Your Minitest Output](http://chriskottom.com/blog/2014/06/dress-up-your-minitest-output/)
+
