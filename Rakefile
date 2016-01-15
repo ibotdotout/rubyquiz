@@ -1,8 +1,8 @@
 require 'rake/testtask'
-require 'codacy-coverage'
+require 'pullreview/coverage_reporter'
 
 Rake::TestTask.new do |t|
   SimpleCov.command_name 'Unit Tests'
-  Codacy::Reporter.start
+  PullReview::CoverageReporter.start
   t.pattern = "test/*_test.rb"
 end
