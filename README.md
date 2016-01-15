@@ -1,4 +1,8 @@
 # Practise TDD Ruby with [Ruby Quiz](http://rubyquiz.com/index.html)
+[![Codacy
+Badge](https://api.codacy.com/project/badge/grade/86e46e03753845dab7a4b5401a9264f7)](https://www.codacy.com/app/tkroputa/rubyquiz)
+[![Build
+Status](https://travis-ci.org/ibotdotout/rubyquiz.svg?branch=master)](https://travis-ci.org/ibotdotout/rubyquiz)
 
 
 ### Run All Test with [Rake](http://stackoverflow.com/a/4966676)
