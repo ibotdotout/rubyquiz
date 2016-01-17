@@ -23,4 +23,20 @@ class SolitaireCipher
     out
   end
 
+  def numbers_to_text(numbers)
+    out = ""
+    numbers.each {|i| out << (i+"A".ord-1).chr }
+    out
+  end
+
+  def encrypt(s)
+    s = sanitize(s)
+    a = text_to_numbers(s)
+    b = text_to_numbers(@key)
+    sum_numbers = []
+    a.zip(b) {|c, key| sum_numbers << (c + key) % 26  }
+    encrypted = numbers_to_text(sum_numbers)
+    separate_five_groups(encrypted)
+  end
+
 end
